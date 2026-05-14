@@ -1,4 +1,4 @@
-#1 Crrea un dict de persona con nombre, edad y ciudad. Accede con [] y con get().
+#1 Crea un dict de persona con nombre, edad y ciudad. Accede con [] y con get().
 person = {
     "name":  "Ana",
     "age":   28,
