@@ -92,22 +92,39 @@ python main.py
 ---
 
 ## 📌 BLOQUE 4 — Input / Output
-> ⏳ Pendiente
+
+IA utilizada: Claude
+Prompt para entender: "¿Cómo funciona input() en Python y por qué siempre devuelve string? ¿Qué son las f-strings y cómo las uso para mostrar variables?"
+Prompt para proceso similar: "Dame un ejercicio donde pida datos al usuario, los convierta al tipo correcto y los muestre con f-string"
+Mi resolución: Practiqué solicitando nombre y edad con input(), convirtiendo la edad a int() y mostrando un mensaje personalizado con f-string. También calculé la suma y promedio de dos números ingresados, y verifiqué qué pasa cuando no se convierte el input al operar con strings.
+Repetición: Lo repetí 2 veces. Al principio no entendía por qué "10" + "5" daba "105" en vez de 15; después quedó claro que sin int() el operador + concatena en lugar de sumar.
 
 ---
 
 ## 📌 BLOQUE 5 — Condicionales
-> ⏳ Pendiente
+IA utilizada: Claude
+Prompt para entender: "¿Cómo funcionan if, elif y else en Python? ¿Cuándo uso and para combinar condiciones?"
+Prompt para proceso similar: "Dame un ejercicio donde use if/elif/else para clasificar un valor y otro donde combine dos condiciones con and"
+Mi resolución: Practiqué determinando si un número es par o impar con el operador módulo (%), asignando calificación letra (A, B, C, D, F) según rangos numéricos con elif encadenados, y creando un sistema de login que valida usuario y contraseña al mismo tiempo con and.
+Repetición: Lo repetí 2 veces. La primera vez puse los rangos del elif en orden incorrecto y las notas altas caían en la rama equivocada; después entendí que el orden de las condiciones importa.
 
 ---
 
 ## 📌 BLOQUE 6 — Bucles
-> ⏳ Pendiente
+IA utilizada: Claude
+Prompt para entender: "¿Cuál es la diferencia entre while y for en Python? ¿Para qué sirve enumerate() y cómo funciona una list comprehension?"
+Prompt para proceso similar: "Dame un ejercicio donde use while con contador, otro con enumerate() sobre una lista y otro con list comprehension filtrando elementos"
+Mi resolución: Imprimí los números del 1 al 10 con while usando un contador que incrementa con +=1. Recorrí una lista de frutas con enumerate() para obtener índice y valor al mismo tiempo. Generé la lista de cuadrados de números pares del 1 al 10 con list comprehension, obteniendo [4, 16, 36, 64, 100].
+Repetición: Lo repetí 2 veces. La primera vez olvidé el contador += 1 dentro del while y el programa se quedó en bucle infinito; también confundí la sintaxis de la list comprehension hasta ver el orden correcto: [expresión for variable in iterable if condición].
 
 ---
 
 ## 📌 BLOQUE 7 — Funciones
-> ⏳ Pendiente
+IA utilizada: Claude
+Prompt para entender: *"¿Cómo defino una función en Python con def y return? ¿Para qué sirve args y cómo funciona la recursividad?"
+Prompt para proceso similar: *"Dame un ejercicio con una función simple, otro que acepte cantidad variable de argumentos con args y otro que use recursividad con un caso base"
+Mi resolución: Creé la función doble(x) que retorna x * 2. Luego una función sumar(*args) que recorre todos los argumentos con un for y acumula el total, funcionando con cualquier cantidad de números. Finalmente implementé factorial(n) de forma recursiva, definiendo el caso base en n == 0 o n == 1 para detener las llamadas; verifiqué que factorial(5) retorna 120.
+Repetición: Lo repetí 2 veces. La primera vez no puse el caso base en la función recursiva y el programa entró en recursión infinita; después entendí que toda función recursiva necesita una condición de parada.
 
 ---
 
