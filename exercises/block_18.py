@@ -5,24 +5,24 @@ class MostrarMixin:
     def consultar(self):
         print(f"--- {self.__class__.__name__} ---")
 
-        for clave, valor in self.__dict__.items():
-            print(f"{clave}: {valor}")
+        for a, b in self.__dict__.items():
+            print(f"{a}: {b}")
 
 
 class ArchivoMixin:
 
-    def guardar(self, nombre_archivo):
-        with open(nombre_archivo, "w") as archivo:
+    def guardar(self, basededatos_biblioteca):
+        with open(basededatos_biblioteca, "w") as archivo:
             json.dump(self.__dict__, archivo)
 
-        print(f"Archivo {nombre_archivo} guardado.")
+        print(f"Archivo {basededatos_biblioteca} guardado.")
 
     @classmethod
-    def cargar(cls, nombre_archivo):
-        with open(nombre_archivo, "r") as archivo:
+    def cargar(cls, basededatos_biblioteca):
+        with open(basededatos_biblioteca, "r") as archivo:
             datos = json.load(archivo)
 
-        print(f"--- Cargando {nombre_archivo} ---")
+        print(f"--- Cargando {basededatos_biblioteca} ---")
 
         for clave, valor in datos.items():
             print(f"{clave}: {valor}")
@@ -56,6 +56,5 @@ libro1.guardar("libro.json")
 socio1.guardar("socio.json")
 
 
-# CARGAR ARCHIVOS JSON
 Libro.cargar("libro.json")
 Socio.cargar("socio.json")
